@@ -33,7 +33,7 @@ resource "aws_route_table" "second_rt" {
 
 resource "aws_route_table_association" "public_subnet_asso" {
     subnet_id = aws_subnet.public_subnet.id
-    route_table_id = aws_route_table.second_rt
+    route_table_id = aws_route_table.second_rt.id
 }
 
 # Create subnets
